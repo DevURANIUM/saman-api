@@ -1,7 +1,7 @@
 """Read-only async example; requires an authenticated API server session."""
 
 import asyncio
-from saman_mobillet import AsyncClient
+from samanapi import AsyncClient
 
 
 async def main():

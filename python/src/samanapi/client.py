@@ -105,7 +105,7 @@ class Client:
             raise ValueError("GET requests cannot have a JSON body.")
         if body is not None and not isinstance(body, Mapping):
             raise ValueError("body must be a JSON object.")
-        headers = {"accept": "application/json", "user-agent": "saman-mobillet/0.1.0"}
+        headers = {"accept": "application/json", "user-agent": "saman-api/0.1.0"}
         if self._api_key:
             headers["x-api-key"] = self._api_key
         return send(

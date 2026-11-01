@@ -8,7 +8,7 @@ This is an unofficial integration and is not endorsed by the bank.
 ```text
 saman-api/
   example/             Python usage examples and synthetic response examples
-  python/              Installable saman-mobillet Python HTTP client
+  python/              Installable saman-api Python HTTP client
   src/                 Bank client, authentication, validation and response logic
     auth-ui/           Browser login assets served by server.js
   docs/                HTTP guide, OpenAPI, Postman and workflow documentation
@@ -42,7 +42,7 @@ python -m pip install ./python
 ```
 
 ```python
-from saman_mobillet import Client
+from samanapi import Client
 
 with Client(api_key="YOUR_SERVICE_API_KEY") as client:
     session = client.sign_in()  # Username, hidden password, device SMS when needed

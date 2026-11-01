@@ -6,7 +6,7 @@ import subprocess
 import sys
 
 root = Path(__file__).resolve().parents[1]
-module = root / "src/saman_mobillet/async_client.py"
+module = root / "src/samanapi/async_client.py"
 original = module.read_text(encoding="utf-8")
 try:
     subprocess.run([sys.executable, str(root / "tools/generate_async.py")], check=True)

@@ -1,5 +1,5 @@
 {
-  "name": "saman-pwa-api",
+  "name": "saman-api",
   "version": "0.3.0",
   "private": true,
   "description": "Local HTTP adapter for the Saman Mobillet PWA",

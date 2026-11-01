@@ -1,7 +1,7 @@
 """Consumer type checks; these functions are checked by mypy, never executed."""
 
 from typing import Any
-from saman_mobillet import Client, AsyncClient
+from samanapi import Client, AsyncClient
 
 
 def sync_consumer(client: Client) -> dict[str, Any]:

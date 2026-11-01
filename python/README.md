@@ -1,4 +1,4 @@
-# saman-mobillet
+# saman-api
 
 A typed, synchronous and asynchronous Python client for the **Saman Mobillet HTTP API**.
 
@@ -11,7 +11,7 @@ Requires Python 3.10+ and API service 0.3+. All SDK prompts and messages are Eng
 ## Installation
 
 ```sh
-pip install saman-mobillet
+pip install saman-api
 ```
 
 Until the first PyPI release, install from the source package directory:
@@ -26,7 +26,7 @@ The default API URL is `http://127.0.0.1:8089/v1`; a supplied URL without `/v1`
 has that suffix appended. Production connections should use HTTPS.
 
 ```python
-from saman_mobillet import Client
+from samanapi import Client
 
 with Client(base_url="http://127.0.0.1:8089/v1", api_key="YOUR_SERVICE_API_KEY") as client:
     result = client.sign_in()  # Username, hidden password, then hidden SMS code if needed
@@ -46,7 +46,7 @@ creating another Python client does **not** create an independent bank login.
 Use explicit stages rather than an interactive prompt:
 
 ```python
-from saman_mobillet import Client
+from samanapi import Client
 
 with Client() as client:
     result = client.login("YOUR_USERNAME", "YOUR_PASSWORD")
@@ -74,7 +74,7 @@ codes belong to different workflows.
 
 ```python
 import asyncio
-from saman_mobillet import AsyncClient
+from samanapi import AsyncClient
 
 async def main():
     async with AsyncClient() as client:
@@ -149,7 +149,7 @@ separate from the SDK; the companion server never automatically replays transfer
 ## Errors and response preservation
 
 ```python
-from saman_mobillet import Client, ApiError, TransportError
+from samanapi import Client, ApiError, TransportError
 
 try:
     with Client() as client:
@@ -177,19 +177,19 @@ or security behavior is the caller's responsibility. `trust_env` defaults to fal
 ## CLI
 
 ```sh
-saman-mobillet login
-saman-mobillet status
-saman-mobillet deposits
-saman-mobillet balance
-saman-mobillet transactions --deposit-number 123-456-0000001-2 --page 0 --size 20 --details false
-saman-mobillet find-transaction 000000000001 --deposit-number 123-456-0000001-2 --match-by reference
-saman-mobillet --help
+saman-api login
+saman-api status
+saman-api deposits
+saman-api balance
+saman-api transactions --deposit-number 123-456-0000001-2 --page 0 --size 20 --details false
+saman-api find-transaction 000000000001 --deposit-number 123-456-0000001-2 --match-by reference
+saman-api --help
 ```
 
 The API key is read from `SAMAN_API_KEY`. `SAMAN_USER` and `SAMAN_PASS` may supply
 credentials to CLI login. All endpoint methods have hyphenated CLI commands;
 `--help` lists their arguments. Boolean arguments take `true` or `false`.
-Wallet filter lists are comma-separated. Use `python -m saman_mobillet` as an
+Wallet filter lists are comma-separated. Use `python -m samanapi` as an
 alternative entry point. The CLI writes JSON results to stdout and errors to
 stderr; `--json-errors` gives structured errors and exit code 1. Cancellation
 uses exit code 130. Financial commands require `TRANSFER`, wallet activation

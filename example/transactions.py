@@ -1,7 +1,7 @@
 """Read the latest transactions for an explicitly selected deposit."""
 import argparse
 import json
-from saman_mobillet import Client
+from samanapi import Client
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("deposit_number")

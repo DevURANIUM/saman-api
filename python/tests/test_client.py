@@ -4,8 +4,8 @@ import unittest
 
 import httpx
 
-from saman_mobillet import Client, AsyncClient
-from saman_mobillet.errors import (
+from samanapi import Client, AsyncClient
+from samanapi.errors import (
     ApiError,
     AuthenticationError,
     ProtocolError,

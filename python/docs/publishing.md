@@ -1,6 +1,6 @@
 # Release guide
 
-Distribution: `saman-mobillet`. Import: `saman_mobillet`. Initial version: `0.1.0`.
+Distribution: `saman-api`. Import: `samanapi`. Initial version: `0.1.0`.
 The package requires Python 3.10+ and a running Saman HTTP service 0.3+.
 The Node service itself is not shipped inside the wheel.
 
@@ -12,14 +12,14 @@ From the Python package directory:
 python -m pip install -e . build twine pip-audit ruff mypy
 python -m unittest discover -s tests -v
 ruff check src --select E9,F63,F7,F82
-mypy src/saman_mobillet tests/typing_contract.py --check-untyped-defs --warn-unused-ignores
+mypy src/samanapi tests/typing_contract.py --check-untyped-defs --warn-unused-ignores
 python tools/generate_async.py
 python -m build
 python -m twine check dist/*
 ```
 
 The build produces a wheel and source archive in `dist/`. Install the wheel in
-a fresh environment and run `saman-mobillet --help`. The integration test requires
+a fresh environment and run `saman-api --help`. The integration test requires
 the Node source and its dependencies; install them from the repository root first.
 Standalone SDK distributions skip that repository-only test, while mock transport
 tests remain runnable. Audit the runtime environment with `pip-audit` before release.
@@ -42,9 +42,9 @@ account security and create a pending Trusted Publisher:
 
 | Setting | Value |
 | --- | --- |
-| PyPI project | `saman-mobillet` |
-| GitHub owner | `YOUR_GITHUB_USERNAME` |
-| Repository | `YOUR_REPOSITORY_NAME` |
+| PyPI project | `saman-api` |
+| GitHub owner | `DevURANIUM` |
+| Repository | `saman-api` |
 | Workflow filename | `publish.yml` |
 | Environment | `pypi` |
 

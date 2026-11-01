@@ -2,7 +2,7 @@ import shutil
 import subprocess
 import unittest
 from pathlib import Path
-from saman_mobillet import Client, AsyncClient, AuthenticationError
+from samanapi import Client, AsyncClient, AuthenticationError
 
 
 class ServiceIntegrationTests(unittest.IsolatedAsyncioTestCase):

@@ -1,6 +1,6 @@
 """Read-only example. Set SAMAN_API_URL and SAMAN_API_KEY for your API service."""
 
-from saman_mobillet import Client
+from samanapi import Client
 
 with Client() as client:
     client.sign_in()

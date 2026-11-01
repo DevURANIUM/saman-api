@@ -67,7 +67,7 @@ def prompt(label: str, secret: bool = False) -> str:
 
 def parser() -> argparse.ArgumentParser:
     root = argparse.ArgumentParser(
-        prog="saman-mobillet",
+        prog="saman-api",
         description="Saman Mobillet HTTP API client. A running API service is required.",
     )
     root.add_argument(

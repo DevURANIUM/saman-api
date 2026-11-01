@@ -6,7 +6,7 @@ import unittest
 from unittest.mock import patch
 
 import httpx
-from saman_mobillet import (
+from samanapi import (
     Client,
     AsyncClient,
     PaginationError,
@@ -14,7 +14,7 @@ from saman_mobillet import (
     SmsDeliveryError,
     TransportError,
 )
-from saman_mobillet.cli import main
+from samanapi.cli import main
 
 
 class WorkflowTests(unittest.TestCase):
@@ -144,12 +144,12 @@ class WorkflowTests(unittest.TestCase):
                     client.transfer_deposit("12345", "67890", amount)
 
     def test_cli_cancelled_payment_never_calls_the_service(self):
-        from saman_mobillet.cli import parser
+        from samanapi.cli import parser
 
         argument_parser = parser()
         with (
-            patch("saman_mobillet.cli.parser", return_value=argument_parser),
-            patch("saman_mobillet.cli.Client") as factory,
+            patch("samanapi.cli.parser", return_value=argument_parser),
+            patch("samanapi.cli.Client") as factory,
             patch("sys.stdout", new_callable=io.StringIO),
             patch("sys.stderr", new_callable=io.StringIO),
         ):
@@ -160,7 +160,7 @@ class WorkflowTests(unittest.TestCase):
             factory.return_value.__enter__.return_value.transfer_deposit.assert_not_called()
 
     def test_cli_covers_every_endpoint_method(self):
-        from saman_mobillet.cli import parser
+        from samanapi.cli import parser
 
         args = parser().parse_args(
             [
@@ -183,8 +183,8 @@ class WorkflowTests(unittest.TestCase):
                 "os.environ",
                 {"SAMAN_API_URL": "http://127.0.0.1:8089", "SAMAN_API_KEY": ""},
             ),
-            patch("saman_mobillet.cli.prompt", side_effect=EOFError),
-            patch("saman_mobillet.cli.Client.request") as request,
+            patch("samanapi.cli.prompt", side_effect=EOFError),
+            patch("samanapi.cli.Client.request") as request,
             patch("sys.stderr", new_callable=io.StringIO),
         ):
             os.environ.pop("SAMAN_PASS", None)

@@ -3,7 +3,7 @@ requires = ["hatchling>=1.26"]
 build-backend = "hatchling.build"
 
 [project]
-name = "saman-mobillet"
+name = "saman-api"
 version = "0.1.0"
 description = "Typed sync and async Python clients for the Saman Mobillet HTTP API"
 readme = "README.md"
@@ -28,12 +28,14 @@ dependencies = ["httpx>=0.28.1,<1"]
 
 [project.urls]
 Documentation = "https://apibank.heydari.workers.dev/saman/"
+Repository = "https://github.com/DevURANIUM/saman-api"
+Issues = "https://github.com/DevURANIUM/saman-api/issues"
 
 [project.scripts]
-saman-mobillet = "saman_mobillet.cli:main"
+saman-api = "samanapi.cli:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/saman_mobillet"]
+packages = ["src/samanapi"]
 
 [tool.hatch.build.targets.sdist]
 include = ["src/", "tests/", "examples/", "tools/", "docs/", "README.md", "CHANGELOG.md", "LICENSE", "pyproject.toml"]

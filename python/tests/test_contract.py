@@ -4,7 +4,7 @@ from pathlib import Path
 import unittest
 
 import httpx
-from saman_mobillet import Client, AsyncClient
+from samanapi import Client, AsyncClient
 
 SPEC = Path(__file__).resolve().parents[2] / "docs" / "openapi.json"
 VALUES = {
