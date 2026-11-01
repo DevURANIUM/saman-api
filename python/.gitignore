@@ -1,0 +1,16 @@
+.venv/
+.verify-venv/
+.mypy_cache/
+.ruff_cache/
+runtime-audit.txt
+__pycache__/
+*.py[cod]
+dist/
+build/
+*.egg-info/
+.coverage
+.pytest_cache/
+.env
+.pypirc
+session*.json
+*.har

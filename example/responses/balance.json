@@ -1,0 +1,212 @@
+{
+  "deposits": [
+    {
+      "balance": 1000000,
+      "bank": {
+        "id": 1,
+        "name": "نمونه",
+        "logoUrl": "https://example.invalid/asset.png",
+        "identifier": "نمونه",
+        "ibanId": "IR220000000000000000000001",
+        "largeLogoUrl": "https://example.invalid/asset.png",
+        "requiredOtp": false
+      },
+      "card": {
+        "balance": 1000000,
+        "bank": {
+          "id": 1,
+          "name": "نمونه",
+          "logoUrl": "https://example.invalid/asset.png",
+          "identifier": "نمونه",
+          "ibanId": "IR220000000000000000000001",
+          "largeLogoUrl": "https://example.invalid/asset.png",
+          "requiredOtp": false
+        },
+        "cardStatus": "OK",
+        "cardStatusCause": "نمونه",
+        "cardType": "DEBIT",
+        "currency": "ریال",
+        "debitOrderId": 1,
+        "eBankingConnected": true,
+        "expireDate": "140801",
+        "firstname": "نام",
+        "fullName": "کاربر نمونه",
+        "hasCvv2": false,
+        "id": 1,
+        "isCardOtpActivated": false,
+        "isNeedRegisterShaparak": false,
+        "isPrivate": true,
+        "issueDate": 1793500000000,
+        "lastname": "نمونه",
+        "needsRevival": false,
+        "order": 1,
+        "pan": "1111222233334444",
+        "paymentable": true,
+        "private": true,
+        "restriction": {
+          "min": 1000000,
+          "max": 1000000,
+          "dailyRemaining": 1000000,
+          "monthlyRemaining": 1000000,
+          "message": "",
+          "minOtpTicketAmount": 1000000,
+          "ownOtpTicketAmount": 1000000
+        },
+        "securePan": "1111222233334444",
+        "transferable": true
+      },
+      "createdDate": 1793500000000,
+      "currency": "ریال",
+      "currencyObject": {
+        "code": "نمونه",
+        "localizedDescription": "شرح نمونه",
+        "symbol": "نمونه"
+      },
+      "depositStatus": "OPEN",
+      "depositType": {
+        "code": "000001",
+        "couldBeInterestDestination": true,
+        "interestRate": 1,
+        "minimumOpeningAmount": 1000000,
+        "title": "نمونه"
+      },
+      "favorite": true,
+      "hasChequeBook": false,
+      "iban": "IR220000000000000000000001",
+      "id": 1,
+      "inaugurationDate": 1793500000000,
+      "isCommercial": false,
+      "isFavorite": true,
+      "label": "نمونه",
+      "minimumOtpAmount": {
+        "OWN": 1,
+        "SATNA": 1,
+        "DEPOSIT": 1,
+        "PAYA": 1,
+        "POL": 1
+      },
+      "number": "123-456-0000001-2",
+      "order": 1,
+      "paymentable": true,
+      "restriction": {
+        "min": 1000000,
+        "max": 1000000,
+        "dailyRemaining": 1000000,
+        "monthlyRemaining": 1000000,
+        "message": "نمونه",
+        "minOtpTicketAmount": 1000000,
+        "ownOtpTicketAmount": 1000000
+      },
+      "title": "نمونه",
+      "topupable": true,
+      "transferable": true,
+      "depositNumber": "123-456-0000001-2",
+      "balanceAvailable": true
+    }
+  ],
+  "cards": [
+    {
+      "balance": 1000000,
+      "bank": {
+        "id": 1,
+        "name": "نمونه",
+        "logoUrl": "https://example.invalid/asset.png",
+        "identifier": "نمونه",
+        "ibanId": "IR220000000000000000000001",
+        "largeLogoUrl": "https://example.invalid/asset.png",
+        "requiredOtp": false
+      },
+      "cardStatus": "OK",
+      "cardStatusCause": "نمونه",
+      "cardType": "DEBIT",
+      "currency": "ریال",
+      "debitOrderId": 1,
+      "deposit": {
+        "balance": 1000000,
+        "bank": {
+          "id": 1,
+          "name": "نمونه",
+          "logoUrl": "https://example.invalid/asset.png",
+          "identifier": "نمونه",
+          "ibanId": "IR220000000000000000000001",
+          "largeLogoUrl": "https://example.invalid/asset.png",
+          "requiredOtp": false
+        },
+        "createdDate": 1793500000000,
+        "currency": "ریال",
+        "currencyObject": {
+          "code": "نمونه",
+          "localizedDescription": "شرح نمونه",
+          "symbol": "نمونه"
+        },
+        "depositStatus": "OPEN",
+        "depositType": {
+          "code": "000001",
+          "couldBeInterestDestination": true,
+          "interestRate": 1,
+          "minimumOpeningAmount": 1000000,
+          "title": "نمونه"
+        },
+        "favorite": true,
+        "hasChequeBook": false,
+        "iban": "IR220000000000000000000001",
+        "id": 1,
+        "inaugurationDate": 1793500000000,
+        "isCommercial": false,
+        "isFavorite": true,
+        "label": "نمونه",
+        "minimumOtpAmount": {
+          "OWN": 1,
+          "SATNA": 1,
+          "DEPOSIT": 1,
+          "PAYA": 1,
+          "POL": 1
+        },
+        "number": "123-456-0000001-2",
+        "order": 1,
+        "paymentable": true,
+        "restriction": {
+          "min": 1000000,
+          "max": 1000000,
+          "dailyRemaining": 1000000,
+          "monthlyRemaining": 1000000,
+          "message": "نمونه",
+          "minOtpTicketAmount": 1000000,
+          "ownOtpTicketAmount": 1000000
+        },
+        "title": "نمونه",
+        "topupable": true,
+        "transferable": true
+      },
+      "eBankingConnected": true,
+      "expireDate": "140801",
+      "firstname": "نام",
+      "fullName": "کاربر نمونه",
+      "hasCvv2": false,
+      "id": 1,
+      "isCardOtpActivated": true,
+      "isNeedRegisterShaparak": false,
+      "isPrivate": true,
+      "issueDate": 1793500000000,
+      "lastname": "نمونه",
+      "needsRevival": false,
+      "order": 1,
+      "pan": "1111222233334444",
+      "paymentable": true,
+      "private": true,
+      "restriction": {
+        "min": 1000000,
+        "max": 1000000,
+        "dailyRemaining": 1000000,
+        "monthlyRemaining": 1000000,
+        "message": "",
+        "minOtpTicketAmount": 1000000,
+        "ownOtpTicketAmount": 1000000
+      },
+      "securePan": "1111222233334444",
+      "transferable": true,
+      "depositNumber": "123-456-0000001-2",
+      "balanceAvailable": true
+    }
+  ]
+}

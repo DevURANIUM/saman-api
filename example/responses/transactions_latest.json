@@ -1,0 +1,63 @@
+{
+  "elements": [
+    {
+      "id": "example-transaction-id",
+      "title": "نمونه",
+      "amount": 1000000,
+      "currency": "ریال",
+      "persianDate": "۱۴۰۵/۰۸/۱۰ ۱۲:۰۰:۰۰",
+      "longDate": 1793500000000,
+      "isWithdrawal": false,
+      "description": "شرح نمونه",
+      "branch": "نمونه",
+      "detail": {
+        "title": "نمونه",
+        "description": "شرح نمونه",
+        "amount": 1000000,
+        "currency": "ریال",
+        "persianDate": "۱۴۰۵/۰۸/۱۰ ۱۲:۰۰:۰۰",
+        "longDate": 1793500000000,
+        "isWithdrawal": false,
+        "depositNumber": "123-456-0000001-2",
+        "referralNumber": "000000000001",
+        "paymentNumber": "000000000001",
+        "category": {
+          "id": 1,
+          "groupEnName": "UNKNOWN_INCOMING",
+          "name": "نمونه"
+        },
+        "otherSideAccountInfo": {
+          "name": "نمونه",
+          "type": "DEPOSIT_TRANSFER"
+        },
+        "details": [
+          {
+            "logoUrl": "https://example.invalid/asset.png",
+            "title": "نمونه",
+            "value": "نمونه"
+          }
+        ],
+        "transactionType": "DEPOSIT_TRANSFER",
+        "logLevel": "INFO",
+        "status": {
+          "code": 0,
+          "message": "",
+          "name": "OK"
+        },
+        "withdrawal": false
+      }
+    }
+  ],
+  "hasNext": true,
+  "hasPrevious": true,
+  "logLevel": "INFO",
+  "numberOfElements": 1,
+  "status": {
+    "code": 0,
+    "message": "",
+    "name": "OK"
+  },
+  "depositNumber": "123-456-0000001-2",
+  "page": 0,
+  "limit": 10
+}

@@ -1,0 +1,41 @@
+{
+  "name": "saman-pwa-api",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Local HTTP adapter for the Saman Mobillet PWA",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test-api.js",
+    "postman:build": "node scripts/export-postman.js",
+    "login": "node cli.js login",
+    "otp": "node cli.js otp",
+    "otp-request": "node cli.js otp-request",
+    "status": "node cli.js status",
+    "logout": "node cli.js logout",
+    "accounts": "node cli.js accounts",
+    "cards": "node cli.js cards",
+    "transactions": "node cli.js transactions",
+    "transactions-latest": "node cli.js transactions-latest",
+    "deposits": "node cli.js deposits",
+    "transaction": "node cli.js transaction",
+    "transaction-find": "node cli.js transaction-find",
+    "ensure-session": "node cli.js ensure-session",
+    "balance": "node cli.js balance",
+    "balance-deposits": "node cli.js balance-deposits",
+    "balance-cards": "node cli.js balance-cards",
+    "cards-all": "node cli.js cards-all",
+    "deposits-all": "node cli.js deposits-all",
+    "recent-deposit": "node cli.js recent-deposit",
+    "recent-card": "node cli.js recent-card",
+    "recent-iban": "node cli.js recent-iban",
+    "samanium": "node cli.js samanium",
+    "merchant-terminals": "node cli.js merchant-terminals",
+    "deposits-favorites": "node cli.js deposits-favorites"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
