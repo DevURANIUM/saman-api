@@ -2,6 +2,8 @@
 
 # saman-api
 
+<img src="assets/saman.svg" alt="Saman Bank Mobillet" width="64">
+
 **رابط HTTP، ابزار خط فرمان و کتابخانهٔ پایتون برای اتصال به موبایلت بانک سامان.**
 
 [English](README.md) · [فارسی](README.fa.md) · [مستندات آنلاین](https://apibank.heydari.workers.dev/saman/) · [راهنمای پایتون](https://apibank.heydari.workers.dev/saman/#python-sdk)

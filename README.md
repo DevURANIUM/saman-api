@@ -1,5 +1,7 @@
 # saman-api
 
+<img src="assets/saman.svg" alt="Saman Bank Mobillet" width="64">
+
 **A local HTTP API, standalone CLI, and typed Python client for Saman Bank Mobillet.**
 
 [English](README.md) · [فارسی](README.fa.md) · [Documentation](https://apibank.heydari.workers.dev/saman/) · [Python SDK guide](https://apibank.heydari.workers.dev/saman/#python-sdk)
