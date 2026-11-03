@@ -8,7 +8,6 @@
 - [Digital rial and transaction detail notes](DETALS-CHANGES.fa.md)
 - [Python SDK guide](../python/README.md)
 - [Complete Python method reference](../python/docs/reference.md)
-- [Python build and publication guide](../python/docs/publishing.md)
 
 Execute all service and CLI commands from the repository root. To regenerate
 the Postman collection from the checked-in OpenAPI document, run:

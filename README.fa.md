@@ -380,7 +380,6 @@ curl.exe "http://127.0.0.1:8089/v1/transactions/latest?depositNumber=123-456-000
 | مجموعهٔ Postman | [دریافت مجموعه](docs/saman-api.postman_collection.json) |
 | مرجع متدهای پایتون | [python/docs/reference.md](python/docs/reference.md) |
 | نمونه‌های قابل اجرا | [example/README.md](example/README.md) |
-| ساخت و انتشار بسته | [python/docs/publishing.md](python/docs/publishing.md) |
 
 در Postman متغیرهای مجموعه، یعنی `baseUrl` و `apiKey` را با مقادیر سرویس خودتان تنظیم کنید. نمونه‌ها دادهٔ ساختگی دارند و درخواست‌ها خودکار اجرا نمی‌شوند.
 
@@ -425,7 +424,6 @@ python -m unittest discover -s python/tests -v
 
 تست یکپارچهٔ پایتون با سرور، به وابستگی‌های Node.js نیاز دارد. تست‌ها از بانک شبیه‌سازی‌شده و انتقال HTTP ساختگی استفاده می‌کنند و انتقال بانکی زنده انجام نمی‌دهند. CI، سرور و SDK را روی ویندوز و لینوکس با پایتون ۳٫۱۰ و ۳٫۱۴ بررسی می‌کند؛ این بررسی شامل lint، نوع‌ها، وابستگی‌ها، ساخت بسته و نصب wheel است.
 
-مجموعهٔ Postman را با `npm run postman:build` بازتولید کنید. انتشار PyPI از طریق اجرای دستی `publish.yml`، پس از تنظیم محیط `pypi` و Trusted Publisher انجام می‌شود. جزئیات در [راهنمای انتشار](python/docs/publishing.md) آمده است.
 
 <a id="contributing"></a>
 

@@ -314,7 +314,6 @@ Server-side renewal may retry a read once after an explicit bank 401 when creden
 | Postman collection | [Import the collection](docs/saman-api.postman_collection.json) |
 | Python methods | [python/docs/reference.md](python/docs/reference.md) |
 | Runnable examples | [example/README.md](example/README.md) |
-| Build and publishing | [python/docs/publishing.md](python/docs/publishing.md) |
 
 Postman uses your own `baseUrl` and `apiKey` collection variables. Examples contain synthetic data and do not run automatically.
 
@@ -347,7 +346,7 @@ python -m unittest discover -s python/tests -v
 
 Node dependencies are required for the Python-to-server integration test. Tests use fake bank clients and mock transports; they do not perform live bank transfers. CI verifies the service and SDK on Windows and Linux with Python 3.10 and 3.14, including lint/type checks, dependency audits, package builds and wheel installation.
 
-Regenerate the Postman collection with `npm run postman:build`. PyPI publication is manually triggered through `publish.yml`, after configuring the `pypi` environment and Trusted Publisher. See the [release guide](python/docs/publishing.md).
+Regenerate the Postman collection with `npm run postman:build`.
 
 ## Contributing and license
 
